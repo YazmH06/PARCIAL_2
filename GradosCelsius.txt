@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class GradosCelsius {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Ingresa la temperatura en grados Celsius: ");
+        double celsius = entrada.nextDouble();
+
+        double fahrenheit = (celsius * 9 / 5) + 32;
+        double kelvin = celsius + 273.15;
+
+        fahrenheit = Math.round(fahrenheit * 100.0) / 100.0;
+        kelvin = Math.round(kelvin * 100.0) / 100.0;
+
+        System.out.println("Temperatura en Fahrenheit: " +  fahrenheit);
+        System.out.println("Temperatura en Kelvin: " + kelvin);
+
+    }
+}
