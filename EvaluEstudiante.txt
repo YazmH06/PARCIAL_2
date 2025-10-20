@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class EvaluacionEstudiante {
+    public static void main(String[] args){
+        int calificacion;
+        Scanner entrada = new Scanner(System.in);
+        System.out.print("Ingresa tu calificación (0 a 100): ");
+        calificacion = entrada.nextInt();
+        if (calificacion >= 0 && calificacion <= 100){
+            if (calificacion >= 90){
+                System.out.println("Desempeño: Excelente");
+            } else{
+                if (calificacion >= 80){
+                    System.out.println("Desempeño: Muy bien");
+                } else{
+                    if (calificacion >= 70){
+                        System.out.println("Desempeño: Bien");
+                    }else{
+                        if (calificacion >= 60){
+                            System.out.println("Desempeño: Suficiente");
+                        } else{
+                            System.out.println("Desempeño: Insuficiente");
+                        }
+                    }
+                }
+            }
+
+        } else{
+            System.out.println("La calificación ingresada no es valida.");
+        }
+
+    }
+}
