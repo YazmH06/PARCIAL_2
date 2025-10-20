@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class SumaNumeros {
+
+    public static void main(String[] args){
+        //creación del objeto Scanner para obtener la entrada de la ventana de comandos
+        Scanner entrada = new Scanner(System.in);
+        // declaración de variables
+        int numero1,numero2,suma,resta,multiplicacion,division,modulo;
+
+        System.out.print("Escribe el primer numero: ");
+        // el metodo nexIn de la clase Scanner permite guardar el valor tecleado
+        numero1 = entrada.nextInt();
+        System.out.print("Escribe el segundo numero: ");
+        numero2 = entrada.nextInt();
+        // calcula la suma
+        suma = numero1 + numero2;
+        // calcula la resta
+        resta = numero1 - numero2;
+        // calcula la multiplicacion
+        multiplicacion = numero1 * numero2;
+        // calcula division
+        resta = numero1 / numero2;
+        // calcula modulo
+        modulo = numero1 % numero2;
+
+        // se muestra en pantalla el resultado
+        System.out.printf("La suma es %d\n", suma);
+        System.out.printf("La resta es " + (numero1 - numero2) + "\n");
+        System.out.printf("La multiplicacion es %d\n", (numero1 * numero2));
+        System.out.printf("La division es %d\n", (numero1 / numero2));
+        System.out.printf("El modulo es %d\n", (numero1 % numero2));
+
+    }
+}
